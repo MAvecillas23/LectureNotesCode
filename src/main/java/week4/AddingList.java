@@ -22,7 +22,7 @@ public class AddingList {
         // gets the number of indexes in the list
         System.out.println(classCodes.size());
 
-        // using a enhanced for loop/ foreach loop in other languages
+        // using an enhanced for loop/ foreach loop in other languages
         for (int classCode: classCodes) {
             System.out.println("ITEC " + classCode);
         }

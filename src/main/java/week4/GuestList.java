@@ -47,33 +47,35 @@ public class GuestList {
             System.out.println(name);
         }
 
+        // asks user if they want to remove names with a yes no answer
         boolean removeQuestion = yesNoInput("Would you like to remove any names in your guest list?");
-        if (removeQuestion) {
+        if (removeQuestion) { // if user enters yes
+            // tells user to enter the name to delete
             System.out.println("Press enter twice when you're done deleting names.");
             while (true) {
                 String removeName = stringInput("Enter the name you'd like to take off the list:");
-
+                // when user presses enter twice they are taken out of the remove name loop
                 if (removeName.length() == 0) {
                     // break out of this while loop
                     break;
 
                 } else {
-
+                    // if not entered twice loop will continue to delete names entered
                     nameList.remove(removeName);
-                    System.out.printf("%s has been removed", removeName);
+                    System.out.printf("%s has been removed \n", removeName);
                     Collections.sort(nameList);
                 }
 
             }
             System.out.println("Your guests are: ");
-
+            // for loop that will loop each name in the names list
             for (String names : nameList) {
-
+                // prints names
                 System.out.println(names);
 
             }
-
-            System.out.println("You have " + nameList.size() + "guest.");
+            // gets the number of names in the names list
+            System.out.println("You have " + nameList.size() + " guests.");
 
         }
 

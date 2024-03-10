@@ -8,7 +8,7 @@ public class randomMethodReview {
         // creates a random generator
         Random rnd = new Random();
 
-        // gets a random number between 0 and 0
+        // gets a random number between 0 and 9
         int randomNumber = rnd.nextInt(10);
         // gets a random number between 0 and 10... + 1 at the end of this statement
         // is how you avoid 0 and 9
