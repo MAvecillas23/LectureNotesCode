@@ -1,0 +1,6 @@
+Hello!
+More data here
+Goodbye!
+New data
+More data
+End of file
